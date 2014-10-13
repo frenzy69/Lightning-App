@@ -1,5 +1,3 @@
-
-
 Get a new DE org at http://developer.salesforce.com/signup. This will have everything you need to get started.
 
 Docs:

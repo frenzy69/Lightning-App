@@ -16,6 +16,5 @@
         // get the value of the select option
         selectedName = event.target.value;
         helper.getProduct(component, selectedName);
-
     },
 })

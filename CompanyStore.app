@@ -4,5 +4,6 @@
 
     <aotpjd:ProductViewer/>
 
+    <script src="/resource/jquery"></script>
     <script src="/resource/bootstrapjs"></script>
 </aura:application>

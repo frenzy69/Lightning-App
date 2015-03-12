@@ -11,7 +11,7 @@
     },    
     addToCart : function(component, event, helper) {
        var product = component.get("v.product");
-       var evt = $A.get("e.aotpjd:AddToCart");
+       var evt = $A.get("e.c:AddToCart");
        evt.setParams({
         "product": product
        });

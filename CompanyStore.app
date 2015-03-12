@@ -1,9 +1,4 @@
-<aura:application>
-    <link href='/resource/bootstrap/' rel="stylesheet"/>
-    <link href='/resource/style/' rel="stylesheet"/>
-
-    <aotpjd:ProductViewer/>
-
-    <script src="/resource/jquery"></script>
-    <script src="/resource/bootstrapjs"></script>
+<aura:application >  
+    <c:load filesInSeries="/resource/companystore/jquery-1.11.2.min.js,/resource/companystore/bootstrap/bootstrap.js,/resource/companystore/bootstrap/bootstrap.css,/resource/companystore/style.css"/>    
+    <c:ProductViewer />
 </aura:application>

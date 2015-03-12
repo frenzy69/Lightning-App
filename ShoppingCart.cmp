@@ -1,7 +1,7 @@
-<aura:component>
-    <aura:attribute name="items" type="aotpjd.Product__c[]"/>
+<aura:component >
+    <aura:attribute name="items" type="Product__c[]"/>
     <aura:attribute name="total" type="Integer" default="0"/>
-    ￼<aura:handler event="aotpjd:AddToCart" action="{!c.handleAddToCartEvent}"/>
+    ￼<aura:handler event="c:AddToCart" action="{!c.handleAddToCartEvent}"/>
 
     <div class="col-lg-9 col-md-9 col-sm-12">
         <div class="col-lg-12 col-sm-12">
@@ -22,18 +22,18 @@
                 <tbody>
                     <aura:iteration items="{!v.items}" var="item">
                     <tr>
-                        <td class="hidden-xs"><img src="{!item.aotpjd__photo__c}" alt="{!item.name}" title="" width="47" height="47" /></td>
-                        <td>{!item.name}
+                        <td class="hidden-xs"><img src="{!item.Photo__c}" alt="{!item.Name}" title="" width="47" height="47" /></td>
+                        <td>{!item.Name}
                         </td>
                         <td>
                             <select>
-                                <aura:iteration items="{!item.aotpjd__Product_Sizes__r}" var="size">
-                                    <option>{!size.name}</option>
+                                <aura:iteration items="{!item.Product_Sizes__r}" var="size">
+                                    <option>{!size.Name}</option>
                                 </aura:iteration>
                             </select>
                         </td>
-                        <td>{!item.aotpjd__color__c}</td>
-                        <td>{!item.aotpjd__points__c}</td>
+                        <td>{!item.Color__c}</td>
+                        <td>{!item.Points__c}</td>
                     </tr>
                     </aura:iteration>
                     <tr>
